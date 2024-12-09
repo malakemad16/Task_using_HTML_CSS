@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #E2E9F1;
+}
+.Task {
+    position: absolute;
+    background-color: #18202D;
+    margin: 30px;
+    height: calc(100% - 60px);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .Task {
+        margin: 20px;
+        height: calc(100% - 40px);
+    }
+}
+@media (max-width: 768px) {
+    .Task {
+        height: calc(100% -40px);
+    }
+}
+.Task .info {
+    display: flex;
+}
+.Task .info img {
+    width: 150px;
+    margin: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #534582;
+}
+.Task .info .content {
+    padding: 30px;
+}
+@media (max-width: 768px) {
+    .Task .info img {
+        margin: 10px auto;
+    }
+    .Task .info .content {
+        padding: 0;
+    }
+    .Task .info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.Task .info .content .name {
+    font-weight: normal;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.Task .info .content .graduate-status {
+    color: #9DA1AA;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .Task   .info .content .name {
+        font-size: 20px;
+    }
+}
+.Task .text .text-one {
+    color: white;
+    padding: 10px 20px;
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 700;
+}
+.Task .text .text-two{
+    font-weight: normal;
+    line-height: 1.6;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #9DA1AA;
+} 
+@media (max-width: 768px) {
+    .Task  .text .text-one,
+    .Task .text .text-two {
+        font-size: 15px;
+    }
+}
+@media (max-width: 991px){
+    .Task .text{
+    height: 400px;
+    padding: 10px 20px; 
+    }
+    .Task .text .text-one,
+    .Task .text .text-two {
+        padding: 0px;
+    }
+    .Task .text .text-two {
+        font-size: inherit;
+    }
+}
